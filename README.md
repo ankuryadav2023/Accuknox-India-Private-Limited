@@ -23,13 +23,5 @@
 ###
 
 <h2 align="left">Hosted URL</h2>
-
-###
-
 <p align="left">You can view the live version of the project here:</p>
-
-###
-
 <h2 align="left">Run Solution Code Locally</h2>
-
-###
