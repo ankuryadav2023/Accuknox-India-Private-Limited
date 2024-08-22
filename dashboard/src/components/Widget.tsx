@@ -21,7 +21,6 @@ import randomColor from 'randomcolor';
 import { StatesType, WidgetType } from '../assets/types';
 import { useDispatch, useSelector } from 'react-redux';
 
-// Register Chart.js components
 Chart.register(
     LineController,
     LineElement,
@@ -111,7 +110,7 @@ const Widget = (props: { categoryId: string, widget: WidgetType }) => {
         <div id={'widget-container-' + props.widget.widgetId} className='m-3 my-0 p-3 d-flex flex-column align-items-center widget-container rounded'>
             <div className='container d-flex justify-content-between align-items-center'>
                 <h4>{props.widget.widgetName}</h4>
-                <span id={'span-' + props.widget.widgetId} className="material-symbols-outlined" onClick={hideWidget}>
+                <span id={'span-' + props.widget.widgetId} className="material-symbols-outlined cursor-pointer" onClick={hideWidget}>
                     close
                 </span>
             </div>

@@ -21,7 +21,7 @@ const AddWidget = () => {
     return (
         <div className='container d-flex flex-column align-items-center justify-content-center'>
             <input type="text" className='m-2 p-2 container rounded' value={widgetName} onChange={(e) => setWidgetName(e.target.value)} placeholder='Enter Widget Name Here' />
-            <button className='m-2 p-1 container rounded' onClick={addWidget}>Add</button>
+            <button className='m-2 p-1 container rounded cursor-pointer' onClick={addWidget}>Add</button>
         </div>
     )
 }

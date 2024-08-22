@@ -36,7 +36,7 @@ const ManageWidgets = () => {
         <div className='d-flex flex-column align-items-center manage-widgets-container'>
             <div className='p-2 container d-flex justify-content-between align-items-center mw-heading-container'>
                 <h4 className='mb-0'>Manage Widgets</h4>
-                <span className="material-symbols-outlined" onClick={() => dispatch({ type: 'UPDATEMWVRF' })}>
+                <span className="material-symbols-outlined cursor-pointer" onClick={() => dispatch({ type: 'UPDATEMWVRF' })}>
                     close
                 </span>
             </div>
@@ -44,14 +44,14 @@ const ManageWidgets = () => {
             <AddCategory2 />
             <div className='d-flex justify-content-start align-items-center mw-categories-container'>
                 {categories.map(category => {
-                    if (category.categoryId === selectedCategory.categoryId) return <p style={{ textDecoration: 'underline', textUnderlineOffset: '10px', textWrap: 'nowrap', wordSpacing: '-4px' }} onClick={() => dispatch({ type: 'UPDATESCR', payload: { categoryId: category.categoryId, categoryName: category.categoryName } })} className='mx-3 my-2'>{category.categoryName}</p>
-                    return <p style={{ textWrap: 'nowrap', wordSpacing: '-4px' }} onClick={() => dispatch({ type: 'UPDATESCR', payload: { categoryId: category.categoryId, categoryName: category.categoryName } })} className='mx-3 my-2'>{category.categoryName}</p>
+                    if (category.categoryId === selectedCategory.categoryId) return <p style={{ textDecoration: 'underline', textUnderlineOffset: '10px', textWrap: 'nowrap', wordSpacing: '-4px' }} onClick={() => dispatch({ type: 'UPDATESCR', payload: { categoryId: category.categoryId, categoryName: category.categoryName } })} className='mx-3 my-2 cursor-pointer'>{category.categoryName}</p>
+                    return <p style={{ textWrap: 'nowrap', wordSpacing: '-4px' }} onClick={() => dispatch({ type: 'UPDATESCR', payload: { categoryId: category.categoryId, categoryName: category.categoryName } })} className='mx-3 my-2 cursor-pointer'>{category.categoryName}</p>
                 })}
             </div>
             <div className='m-4 container d-flex flex-column align-items-center justify-content-center'>
                 {selectedCategoryWidgets.map(widget => {
                     return <div className='mb-2 p-2 container d-flex justify-content-start align-items-center border rounded'>
-                        <input type="checkbox" id={'checkbox-' + widget.widgetId} value={'checkbox-' + widget.widgetId} checked={widget.visibility} onChange={toggleCheckbox} />
+                        <input type="checkbox" id={'checkbox-' + widget.widgetId} className='cursor-pointer' value={'checkbox-' + widget.widgetId} checked={widget.visibility} onChange={toggleCheckbox} />
                         <p className='mb-0 ms-3'>{widget.widgetName}</p>
                     </div>
                 })}
