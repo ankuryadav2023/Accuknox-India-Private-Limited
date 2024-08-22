@@ -11,7 +11,12 @@ import {
     BarElement,
     PieController,
     ArcElement,
-    DoughnutController
+    DoughnutController,
+    ChartTypeRegistry,
+    ChartData,
+    ChartOptions,
+    Point,
+    BubbleDataPoint
 } from 'chart.js';
 import randomColor from 'randomcolor';
 import { StatesType, WidgetType } from '../assets/types';
@@ -35,7 +40,7 @@ Chart.register(
 const Widget = (props: { categoryId: string, widget: WidgetType }) => {
     const categories = useSelector((states: StatesType) => states.categories);
     const dispatch = useDispatch();
-    const chartRef = useRef<Chart | null>(null);
+    const chartRef = useRef<Chart<keyof ChartTypeRegistry, (number | [number, number] | Point | BubbleDataPoint | null)[]> | null>(null);
     const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
@@ -66,9 +71,9 @@ const Widget = (props: { categoryId: string, widget: WidgetType }) => {
         }
 
         if (props.widget.data && props.widget.widgetType) {
-            chartRef.current = new Chart(canvas, {
-                type: props.widget.widgetType,
-                data: props.widget.data,
+            chartRef.current = new Chart(canvas as unknown as CanvasRenderingContext2D, {
+                type: props.widget.widgetType as keyof ChartTypeRegistry,
+                data: props.widget.data as ChartData<keyof ChartTypeRegistry>,
             });
         } else {
             const img = new Image();
