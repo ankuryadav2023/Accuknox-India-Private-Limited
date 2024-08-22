@@ -18,7 +18,7 @@
 <h2>Run Solution Code Locally</h2>
 <ol>
       <li>Clone the repository to your local machine:
-        <pre><code>git clone https://github.com/username/repo-name.git</code></pre>
+        <pre><code>git clone https://github.com/ankuryadav2023/Accuknox-India-Private-Limited.git</code></pre>
       </li>
       <li>Navigate to the project directory:
         <pre><code>cd dashboard</code></pre>
