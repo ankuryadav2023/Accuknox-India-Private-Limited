@@ -14,7 +14,6 @@ import {
     DoughnutController,
     ChartTypeRegistry,
     ChartData,
-    ChartOptions,
     Point,
     BubbleDataPoint
 } from 'chart.js';
