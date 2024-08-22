@@ -13,7 +13,7 @@
 </div>
 
 <h2>Hosted URL</h2>
-<p>You can view the live version of the project here: <a href='https://ayportfolio.onrender.com'>Click Here</a></p>
+<p>You can view the live version of the project here: <a href='https://accuknox-solution.onrender.com/' target='_blank'>Click Here</a></p>
 
 <h2>Run Solution Code Locally</h2>
 <ol>
@@ -28,6 +28,9 @@
       </li>
       <li>Start the development server:
         <pre><code>npm run dev</code></pre>
+      </li>
+      <li>View the solution at:
+        <pre><code>http://localhost:5173/</code></pre>
       </li>
 </ol>
 
