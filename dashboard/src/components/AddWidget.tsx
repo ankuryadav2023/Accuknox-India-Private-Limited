@@ -1,4 +1,3 @@
-import React from 'react'
 import { useDispatch } from 'react-redux'
 
 const AddWidget = (props: { categoryId: string, categoryName: string }) => {

@@ -1,4 +1,3 @@
-import React from 'react'
 import Widget from './Widget'
 import { CategoryType } from '../assets/types'
 import AddWidget from './AddWidget'

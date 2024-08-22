@@ -1,4 +1,4 @@
-import React, { MouseEvent, memo, useEffect, useRef } from 'react';
+import { MouseEvent, memo, useEffect, useRef } from 'react';
 import {
     Chart,
     LineController,
@@ -92,7 +92,7 @@ const Widget = (props: { categoryId: string, widget: WidgetType }) => {
             type: 'UPDATECR', payload: categories.map(category => {
                 if (category.categoryId === props.categoryId) {
                     category.widgets.map(widget => {
-                        if (widget.widgetId === e.target.id.split('-')[1]) {
+                        if (widget.widgetId === e.currentTarget.id.split('-')[1]) {
                             widget.visibility = !(widget.visibility);
                         }
                         return widget;
