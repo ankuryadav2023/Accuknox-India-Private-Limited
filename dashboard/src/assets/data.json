@@ -1,0 +1,302 @@
+[
+    {
+        "categoryId": "1",
+        "categoryName": "Sales Performance",
+        "widgets": [
+            {
+                "widgetId": "1",
+                "widgetName": "Monthly Sales",
+                "widgetType": "line",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "January",
+                        "February",
+                        "March",
+                        "April",
+                        "May",
+                        "June",
+                        "July"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Sales in USD",
+                            "data": [
+                                12000,
+                                15000,
+                                18000,
+                                20000,
+                                25000,
+                                22000,
+                                27000
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "widgetId": "2",
+                "widgetName": "Product Category Sales",
+                "widgetType": "bar",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "Electronics",
+                        "Clothing",
+                        "Groceries",
+                        "Furniture",
+                        "Toys"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Sales in USD",
+                            "data": [
+                                30000,
+                                20000,
+                                15000,
+                                25000,
+                                12000
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "categoryId": "2",
+        "categoryName": "Customer Insights",
+        "widgets": [
+            {
+                "widgetId": "3",
+                "widgetName": "Customer Satisfaction",
+                "widgetType": "pie",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "Very Satisfied",
+                        "Satisfied",
+                        "Neutral",
+                        "Dissatisfied",
+                        "Very Dissatisfied"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Customer Ratings",
+                            "data": [
+                                50,
+                                30,
+                                10,
+                                7,
+                                3
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "widgetId": "4",
+                "widgetName": "New vs Returning Customers",
+                "widgetType": "doughnut",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "New Customers",
+                        "Returning Customers"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Customer Distribution",
+                            "data": [
+                                40,
+                                60
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "categoryId": "3",
+        "categoryName": "Website Traffic",
+        "widgets": [
+            {
+                "widgetId": "5",
+                "widgetName": "Daily Visitors",
+                "widgetType": "line",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Visitors",
+                            "data": [
+                                1500,
+                                1800,
+                                1700,
+                                1600,
+                                1900,
+                                2000,
+                                2200
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "widgetId": "6",
+                "widgetName": "Traffic Sources",
+                "widgetType": "pie",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "Organic",
+                        "Direct",
+                        "Referral",
+                        "Social Media",
+                        "Paid Ads"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Traffic Sources",
+                            "data": [
+                                45,
+                                25,
+                                15,
+                                10,
+                                5
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "categoryId": "4",
+        "categoryName": "Financial Overview",
+        "widgets": [
+            {
+                "widgetId": "7",
+                "widgetName": "Quarterly Revenue",
+                "widgetType": "bar",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "Q1",
+                        "Q2",
+                        "Q3",
+                        "Q4"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Revenue in USD",
+                            "data": [
+                                50000,
+                                60000,
+                                55000,
+                                70000
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "widgetId": "8",
+                "widgetName": "Expense Distribution",
+                "widgetType": "doughnut",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "Salaries",
+                        "Marketing",
+                        "R&D",
+                        "Operations",
+                        "Other"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Expenses in USD",
+                            "data": [
+                                30000,
+                                15000,
+                                10000,
+                                20000,
+                                5000
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "categoryId": "5",
+        "categoryName": "Product Analytics",
+        "widgets": [
+            {
+                "widgetId": "9",
+                "widgetName": "Top Selling Products",
+                "widgetType": "bar",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "Product A",
+                        "Product B",
+                        "Product C",
+                        "Product D",
+                        "Product E"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Units Sold",
+                            "data": [
+                                500,
+                                400,
+                                300,
+                                200,
+                                100
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "widgetId": "10",
+                "widgetName": "Customer Ratings",
+                "widgetType": "line",
+                "visibility": true,
+                "data": {
+                    "labels": [
+                        "Product A",
+                        "Product B",
+                        "Product C",
+                        "Product D",
+                        "Product E"
+                    ],
+                    "datasets": [
+                        {
+                            "label": "Rating",
+                            "data": [
+                                4.5,
+                                4.0,
+                                3.8,
+                                4.2,
+                                3.9
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+]
