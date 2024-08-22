@@ -13,7 +13,7 @@
 </div>
 
 <h2>Hosted URL</h2>
-<p>You can view the live version of the project here: <a href='https://accuknox-solution.onrender.com/' target='_blank'>Click Here</a></p>
+<p>You can view the live version of the project here: <a href='https://accuknox-solution.onrender.com/'>Click Here</a></p>
 
 <h2>Run Solution Code Locally</h2>
 <ol>
